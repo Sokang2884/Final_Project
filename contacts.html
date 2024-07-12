@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Godalah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/Godalah 16.png" alt="Godalah Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="#get-involved" class="signup-btn">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us through the form below or visit us at our location.</p>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="form-container">
+                <form action="contact_form_handler.php" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="contact-submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.08216672807!2d72.7411012502116!3d19.082197839774066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63e867b56ab%3A0x65dd61f56d9b5f47!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1627494681833!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-background">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <img src="Images/Godalah 16.png" alt="Godalah Logo">
+                <p>Empowering communities to achieve sustainable growth through innovative projects and partnerships.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Explore Us</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="our-team.html">Our Team</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Projects</h3>
+                <ul>
+                    <li><a href="#">Godalah WASH</a></li>
+                    <li><a href="#">Social Well-Being</a></li>
+                    <li><a href="#">Community Empowerment</a></li>
+                    <li><a href="#">Climate Change Innovation</a></li>
+                    <li><a href="#">Food Security & Sovereignty</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <p>Question or feedback? We'd love to hear from you.</p>
+                <a href="#contact" class="contact-btn">Contact Us <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <p class="footer-bottom-text">&copy; 2024 Godalah Kenya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
