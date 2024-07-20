@@ -4,37 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Godalah - Empowering Communities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="Images/Godalah 16.png" alt="Godalah Logo">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/Godalah 16.png" alt="Godalah Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="what-we-do.html">What We Do</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="our-team.html">Our Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary" href="#get-involved">Get Involved</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="what-we-do.html">What We Do</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="our-team.html">Our Team</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="#get-involved" class="signup-btn">Get Involved</a></li>
-            </ul>
-        </nav>
     </header>
+
     <section class="hero">
-        <div class="hero-content">
-            <h1>Doing Exploits: Changing Communities</h1>
-            <p>Godala CBO is championing community-led initiatives to create lasting positive impact.</p>
-            <div class="cta-buttons">
-                <a href="#learn-more" class="cta-button">Learn More</a>
-                <a href="#get-involved" class="cta-button secondary">Get Involved</a>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1>Doing Exploits: Changing Communities</h1>
+                    <p>Godala CBO is championing community-led initiatives to create lasting positive impact.</p>
+                    <div class="cta-buttons">
+                        <a href="#learn-more" class="btn btn-primary">Learn More</a>
+                        <a href="#get-involved" class="btn btn-outline-primary">Get Involved</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <img src="images/IMG20230814132716.jpg" alt="Community members working together" class="img-fluid">
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/IMG20230814132716.jpg" alt="Community members working together">
         </div>
     </section>
     
@@ -44,59 +57,65 @@
                 <source src="Images/Dream.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
-            <div class="content">
+            <div class="container content">
                 <h2>Addressing the Rural Challenges</h2>
                 <p>Godalah envisions a thriving rural landscape where residents are empowered to achieve long-term economic prosperity and improved quality of life. We believe in the power of collaboration and strive to inspire communities by:</p>
                 <ul>
-                    <li><strong>Facilitating Network Formation:</strong> We act as a catalyst for the development of cooperative networks. These networks empower farmers to share resources, knowledge, and bargaining power. By collaborating, they can collectively invest in processing facilities, storage solutions, and transportation infrastructure, improving efficiency and market access.</li>
-                    <li><strong>Scaling Up Production:</strong> Through collaborative efforts, communities can secure funding for better equipment, irrigation systems, and sustainable agricultural practices. This leads to increased crop yields, improved quality, and enhanced competitiveness in the marketplace.</li>
-                    <li><strong>Securing Fair Market Access:</strong> By eliminating exploitative middlemen through cooperative marketing strategies, farmers can receive a fairer share of profits for their produce. This directly translates to increased income, greater investment in their farms, and overall community improvement.</li>
+                    <li><strong>Facilitating Network Formation:</strong> We act as a catalyst for the development of cooperative networks. These networks empower farmers to share resources, knowledge, and bargaining power.</li>
+                    <li><strong>Scaling Up Production:</strong> Through collaborative efforts, communities can secure funding for better equipment, irrigation systems, and sustainable agricultural practices.</li>
+                    <li><strong>Securing Fair Market Access:</strong> By eliminating exploitative middlemen through cooperative marketing strategies, farmers can receive a fairer share of profits for their produce.</li>
                 </ul>
             </div>
         </section>
     </main>
 
     <footer class="footer-background">
-        <div class="footer-content">
-            <div class="footer-section logo-section">
-                <img src="Images/Godalah 16.png" alt="Godalah Logo">
-                <p>Empowering communities to achieve sustainable growth through innovative projects and partnerships.</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-section">
+                    <img src="Images/Godalah 16.png" alt="Godalah Logo" class="footer-logo">
+                    <p>Empowering communities to achieve sustainable growth through innovative projects and partnerships.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-section">
-                <h3>Explore Us</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+                <div class="col-md-3 footer-section">
+                    <h3>Explore Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="what-we-do.html">What We Do</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="our-team.html">Our Team</a></li>
                         <li><a href="contacts.html">Contacts</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Our Projects</h3>
-                <ul>
-                    <li><a href="#">Godalah WASH</a></li>
-                    <li><a href="#">Social Well-Being</a></li>
-                    <li><a href="#">Community Empowerment</a></li>
-                    <li><a href="#">Climate Change Innovation</a></li>
-                    <li><a href="#">Food Security & Sovereignty</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Get in Touch</h3>
-                <p>Question or feedback? We'd love to hear from you.</p>
-                <a href="#contact" class="contact-btn">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-section">
+                    <h3>Our Projects</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Godalah WASH</a></li>
+                        <li><a href="#">Social Well-Being</a></li>
+                        <li><a href="#">Community Empowerment</a></li>
+                        <li><a href="#">Climate Change Innovation</a></li>
+                        <li><a href="#">Food Security & Sovereignty</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-section">
+                    <h3>Get in Touch</h3>
+                    <p>Question or feedback? We'd love to hear from you.</p>
+                    <a href="#contact" class="btn btn-outline-light">Contact Us <i class="bi bi-arrow-right"></i></a>
+                </div>
             </div>
         </div>
-        <p class="footer-bottom-text">&copy; 2024 Godalah Kenya. All rights reserved.</p>
+        <div class="container">
+            <p class="text-center mt-4">&copy; 2024 Godalah Kenya. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
