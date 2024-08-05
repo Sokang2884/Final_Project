@@ -1004,3 +1004,212 @@ p {
         margin-bottom: 30px;
     }
 }
+/* Your existing CSS here */
+
+/* ... (keep all your existing styles) ... */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .hero {
+        padding: 60px 20px;
+    }
+    
+    .section {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-content, .hero-image {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+    .hero-image {
+        margin-top: 30px;
+    }
+    
+    .program {
+        flex-direction: column;
+    }
+    
+    .program img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .vision-mission-section {
+        flex-direction: column;
+    }
+    
+    .vision, .mission {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        max-width: 100%;
+    }
+    
+    .project-card {
+        flex: 1 1 100%;
+    }
+    
+    .team-member {
+        width: 100%;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .about-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .program-content h3 {
+        font-size: 20px;
+    }
+    
+    .program-content h4 {
+        font-size: 16px;
+    }
+    
+    .section h2 {
+        font-size: 20px;
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 480px) {
+    header .logo img {
+        height: 40px;
+    }
+    
+    .signup-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .about-hero {
+        padding: 60px 20px 30px 20px;
+    }
+    
+    .team-img-container {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* Add this to your existing CSS file */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #003d5b;
+        padding-top: 60px;
+        transition: right 0.3s ease;
+    }
+
+    .main-nav.active {
+        right: 0;
+    }
+.main-nav {
+    /* existing styles */
+    display: none; /* Add this line */
+}
+
+.main-nav.active {
+    display: block; /* Add this line */
+    right: 0;
+}
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 20px;
+    }
+}
